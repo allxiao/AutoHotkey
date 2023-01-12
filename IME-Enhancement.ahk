@@ -24,8 +24,14 @@ $<+space::
     Send "{Space}"
 }
 
-; Ctrl-space to switch between the most recently used two input methods
+; Ctrl-space to switch between the most recently used two input methods.
 $<^space::
+{
+    Send "^#{Space}"
+}
+
+; LCtrl+LShift to switch between the most recently used two input methods instead of all.
+LCtrl & LShift::
 {
     Send "^#{Space}"
 }
